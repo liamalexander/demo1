@@ -12,7 +12,11 @@ db.once('open', function() {
 });
 
 const newsletterSchema = new mongoose.Schema({
-    email: String
+    email:  {
+        type : String,
+        unique : true,
+        required : true 
+    }
 });
 
 const Newsletter = mongoose.model('Newsletter', newsletterSchema);
