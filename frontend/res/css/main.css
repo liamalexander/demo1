@@ -24,3 +24,8 @@ header div a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+#newsletter-wrapper {
+    margin-top: 50px;
+    margin-left: 20px;
+}

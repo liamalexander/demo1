@@ -39,4 +39,14 @@ window.addEventListener("load", () => {
     buttonReset.addEventListener("click", () => { 
         resetCounter();
     });
+
+    const buttonNewsletterSubmit = document.getElementById("newsletterSubmit");
+    buttonNewsletterSubmit.addEventListener("click", (e) => { 
+        e.preventDefault();
+        console.log("clicked");
+        const emailInput = document.getElementById("email");
+        const email = emailInput.value;
+        console.log(email)
+    });
+
 });
