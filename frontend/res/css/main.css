@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color:red;
+header {
+    height:60px;
+    width:100%;
+    background: #eee;
+}
+
+header div {
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
