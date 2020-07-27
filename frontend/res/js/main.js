@@ -1,15 +1,31 @@
 let counter = 0;
 
-function addCounter(){
+window.addEventListener("load", () => { 
     const counterOutput = document.getElementById("counter");
-    counter = counter + 1;
-    counterOutput.innerHTML = counter;
 
-}
+    function outputCounter() {
+        counterOutput.innerHTML = counter;
+    }
 
-window.addEventListener("load", () => {
-    const button = document.getElementById("button");
-    button.addEventListener("click", () => { 
+    function addCounter(){
+        counter = counter + 1;
+        outputCounter();
+    }
+    
+    function removeCounter(){
+        if (counter > 0) {
+            counter = counter - 1;
+            outputCounter();    
+        }
+    }
+    
+    const buttonAdd = document.getElementById("buttonAdd");
+    buttonAdd.addEventListener("click", () => { 
         addCounter();
+    });
+
+    const buttonRemove = document.getElementById("buttonRemove");
+    buttonRemove.addEventListener("click", () => { 
+        removeCounter();
     });
 });
