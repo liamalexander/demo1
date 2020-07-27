@@ -13,4 +13,8 @@ app.get('/about', function(req, res) {
     res.sendFile(path.join(__dirname + '/../frontend/about.html'));
 });
 
+app.get('/contact', function(req, res) {
+    res.sendFile(path.join(__dirname + '/../frontend/contact.html'));
+});
+
 app.listen(3000);
