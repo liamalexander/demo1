@@ -41,6 +41,18 @@ window.addEventListener("load", () => {
         outputCounter();
     }
 
+    function addFive() {
+        counter = counter + 5;
+        outputCounter();
+    }
+
+    function removeFive() {
+        if (counter > 4) {
+            counter = counter - 5;
+            outputCounter();
+        }
+    }
+
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
         addCounter();
@@ -69,6 +81,16 @@ window.addEventListener("load", () => {
     const buttonHund = document.getElementById("buttonHund");
     buttonHund.addEventListener("click", () => {
         setHund();
+    });
+
+    const buttonFive = document.getElementById("buttonFive");
+    buttonFive.addEventListener("click", () => {
+        addFive();
+    });
+
+    const buttonNegFive = document.getElementById("buttonNegFive");
+    buttonNegFive.addEventListener("click", () => {
+        removeFive();
     });
 
     const buttonNewsletterSubmit = document.getElementById("newsletterSubmit");
