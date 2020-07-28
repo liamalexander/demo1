@@ -23,8 +23,19 @@ window.addEventListener("load", () => {
         counter = 0;
         outputCounter();
     }
+
+    function addTen() {
+        counter = counter + 10;
+        outputCounter();
+    }
     
-    
+    function removeTen() {
+        if (counter > 9) {
+        counter = counter - 10;
+        outputCounter();
+        }
+    }
+
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
         addCounter();
@@ -38,6 +49,16 @@ window.addEventListener("load", () => {
     const buttonReset = document.getElementById("buttonReset");
     buttonReset.addEventListener("click", () => { 
         resetCounter();
+    });
+
+    const buttonTen = document.getElementById("buttonTen");
+    buttonTen.addEventListener("click", () => {
+        addTen();
+    });
+
+    const buttonNegTen = document.getElementById("buttonNegTen");
+    buttonNegTen.addEventListener("click", () => {
+        removeTen();
     });
 
     const buttonNewsletterSubmit = document.getElementById("newsletterSubmit");
