@@ -36,6 +36,11 @@ window.addEventListener("load", () => {
         }
     }
 
+    function setHund() {
+        counter = 100;
+        outputCounter();
+    }
+
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
         addCounter();
@@ -59,6 +64,11 @@ window.addEventListener("load", () => {
     const buttonNegTen = document.getElementById("buttonNegTen");
     buttonNegTen.addEventListener("click", () => {
         removeTen();
+    });
+
+    const buttonHund = document.getElementById("buttonHund");
+    buttonHund.addEventListener("click", () => {
+        setHund();
     });
 
     const buttonNewsletterSubmit = document.getElementById("newsletterSubmit");
