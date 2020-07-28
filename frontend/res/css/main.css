@@ -23,6 +23,11 @@ header div {
 header div a {
     text-decoration: none;
     text-transform: uppercase;
+    margin:20px;
+}
+
+header div a:hover {
+    background: red;
 }
 
 #newsletter-wrapper {
