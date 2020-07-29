@@ -53,6 +53,11 @@ window.addEventListener("load", () => {
         }
     }
 
+    function setOne() {
+        counter = 1;
+        outputCounter();
+    }
+
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
         addCounter();
@@ -91,6 +96,11 @@ window.addEventListener("load", () => {
     const buttonNegFive = document.getElementById("buttonNegFive");
     buttonNegFive.addEventListener("click", () => {
         removeFive();
+    });
+
+    const buttonOne = document.getElementById("buttonOne");
+    buttonOne.addEventListener("click", () => {
+        setOne();
     });
 
     const buttonNewsletterSubmit = document.getElementById("newsletterSubmit");
