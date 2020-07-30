@@ -21,10 +21,9 @@ window.addEventListener("load", () => {
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
         addCounter();
-    }
-    ,)})
 
     const buttonRemove = document.getElementById("buttonRemove");
     buttonRemove.addEventListener("click", () => { 
         removeCounter();
-    });
+    })}
+    ,)})
