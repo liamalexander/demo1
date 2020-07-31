@@ -13,10 +13,10 @@ window.addEventListener("load", () => {
     }
 
     function removeCounter(){
-        if (counter > 0);
+        if (counter > 0) {
         counter = counter - 1;
         outputCounter();
-    }
+    }}
 
     const buttonAdd = document.getElementById("buttonAdd");
     buttonAdd.addEventListener("click", () => { 
@@ -25,5 +25,4 @@ window.addEventListener("load", () => {
     const buttonRemove = document.getElementById("buttonRemove");
     buttonRemove.addEventListener("click", () => { 
         removeCounter();
-    })}
-    ,)})
+    })})})
