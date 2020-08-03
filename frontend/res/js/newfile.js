@@ -27,3 +27,11 @@ window.addEventListener("load", () => {
         removeCounter();
     })})})
 
+function vinceRumble(){
+    document.getElementById("wrestler").style.display="block";
+}
+
+    const vinceButton = document.getElementById("buttonVince");
+    vinceButton.addEventListener("click", () => {
+        vinceRumble();
+    })
