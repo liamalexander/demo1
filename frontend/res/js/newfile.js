@@ -26,3 +26,4 @@ window.addEventListener("load", () => {
     buttonRemove.addEventListener("click", () => { 
         removeCounter();
     })})})
+
