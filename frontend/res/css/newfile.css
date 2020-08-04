@@ -1,0 +1,46 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+h1 {
+    height:50px;
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+header{
+    height:50px;
+    width: 100%;
+    background-color: black;
+}
+
+header div{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+
+header div a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin:20px;
+    color:red;
+    overflow-x: hidden;
+}
+
+header div a:hover{
+    background-color: white;
+}
+
+body{
+    background-color: #eee;
+    overflow-x: hidden;
+}
