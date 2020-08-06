@@ -27,11 +27,15 @@ window.addEventListener("load", () => {
         removeCounter();
     })})})
 
-function vinceRumble(){
-    document.getElementById("wrestler").style.display="block";
-}
+    /*const ul = document.querySelector("people");
 
-    const vinceButton = document.getElementById("buttonVince");
-    vinceButton.addEventListener("click", () => {
-        vinceRumble();
-    })
+    const people = ['liam', 'ben', 'spencer'];
+
+    let html = ``;
+
+    people.forEach(function(person) {
+        html += `<li style="color:purple">${person}</li>`;
+    });
+
+    ul.innerHTML = html;
+    console.log(html);*/
