@@ -1,0 +1,281 @@
+* {
+    box-sizing:border-box;
+    }
+    
+    
+    .topnav {
+    background-color: #333;
+    overflow:hidden;
+    position:relative;
+    top:-10px;
+    }
+    
+    /*I added left:-10px but it amplified everything, like below comments, and now it won't go back */
+    
+    .topnav a {
+    float:left;
+    display:block;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    overflow:hidden;
+    }
+    
+    /*I tried to add a right border here but it amplified the pics and moved the slide numbers, check out how to fix this, maybe it was the moving of borderbox?*/
+    
+    .topnav a:hover {
+    background-color:lightGray;
+    color:black;
+    border-bottom:3px solid yellow;
+    }
+    
+    .topnav input[type=text] {
+    float:right;
+    padding:6px;
+    border:none;
+    margin-top:8px;
+    margin-right:16px;
+    }
+    
+    /* * {box-sizing:border-box;}   This used to be here but was moved to the top to see if it made a difference */
+    
+    .slideshow-container {
+    max-width:800px;		/*changd from 1000px to 800px then changed from max-width to width for floating*/
+    position:relative;
+    top:30px;		/* This was 70px with the margin:auto property too*/
+    left:20px;    		/*just added - need to work out how to make the image fit the frame and show full pic not close up*/	
+    margin-bottom:20px;	/*added after the changing of size to 800px to move the news headline as it came into the pic after the change*/
+    }			/*margin:auto  this is to center the pic horizontally - it's needed*/  
+    
+    
+    .section {		/*with the dot before it, it floats Harry left but then James goes below it, without the . they are next to eachother but H in middle*/
+    float:left;
+    width:60%;
+    }
+    
+    html, body {		/*removes side scroll but adds a second vertical scroll bar*/
+    max-width:100%;
+    height:100%;
+    overflow-x:hidden;
+    }	/*tried auto, scroll, hidden, none, visible and without it completely, all leave a second scroll bar, hidden removes both of them*/
+    
+    
+    
+    .slideshow-container:after {	/*to remove blank space*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
+    .section:after {	/*added to try remove the white space below James and slideshow*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
+    .pics2 {		/*was float:right, width:20%;*/
+    float:left;
+    width:20%;
+    margin-right:10px;
+    position:relative;	/*fixed with left/top moves J to correct position, but it moves with screen.  relavite with left65% and top -530px is right but with blank below*/
+    left:65%;
+    top:-530px;
+    }
+    
+    .pics2 h2 {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color:white;
+    }
+    
+    .pics2:after {		/*added this to try to remove the blank space below slideshow and James, didn't work, must be another div to clear*/
+    content:"";
+    display:block;
+    clear:left;		/*tried clear both and clear left, neither worked*/
+    }
+    
+    .pics2 h2:after {	/*as above comments*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
+    .mySlides {
+    display:none;
+    }
+    
+    .mySlides:after {	/*same as all other comments - to remove blank space but didn't work*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
+    img {				/*vertical-align:middle; was here before  - get it so all lines/numbers are inside image, make width smaller & add 2 pics on side*/
+    height:500px;
+    object-fit:cover;		/*cover=all same size and quality but cuts edges so don't see all photo, contain has all in view but changes size, scale-down is same as contain*/
+    object-position:50% 50%;	/*changing this changes sizes of pics but not the element, difficult to find right sizes though*/
+    }
+    
+    img:after {			/*to remove blank space*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
+    .headlinenews {			/*added today, want it next to the main container*/
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+    }
+    
+    .headlinenews1 {		/*maybe need to add clear property for these 3 when making next section*/
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+    margin-left:20px;
+    }
+    
+    .headlinenews2 {
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+    margin-left:20px;
+    }
+    
+    .prev, .next {
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:blue;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease;
+    border-radius:0 3px 3px 0;
+    user-select:none;
+    }
+    
+    .next {
+    right:0;
+    border-radius:3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+    background-color:rgba(0,0,0,0.8);
+    }
+    
+    .text {
+    color:#f2f2f2;
+    font-size:15px;
+    padding:8px 12px;
+    position:absolute;
+    bottom:8px;
+    width:100%;
+    text-align:center;
+    }
+    
+    .numbertext {
+    color:#f2f2f2;
+    font-size:12px;
+    padding:8px 12px;
+    position:absolute;
+    top:0;
+    }
+    
+    .dot {
+    cursor:pointer;
+    height:15px;
+    width:15px;
+    margin:0 2px;
+    background-color:#bbb;
+    border-radius:50%;
+    display:inline-block;
+    transition:background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+    background-color:#717171;
+    }
+    
+    .fade {
+    -webkit-animation-name:fade;
+    animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-duration:1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity:.4}
+      to {opacity:1}
+    }
+    
+    @keyframes fade {
+      from{opacity:.4}
+      to{opacity:1}
+    }
+    
+    #introbar {
+    background-color:white;
+    }
+    
+    #opening {
+    float:left;
+    position:relative;
+    left:30px;
+    color:black;
+    font-weight:bold;
+    }
+    
+    #datetop {
+    float:right;
+    position:relative;
+    right:30px;
+    color:gray;
+    font-weight:bold;
+    }
+    
+    #opening:after {
+    clear:left;
+    display:block;
+    content:"";
+    }
+    
+    #datetop:after {
+    clear:right;
+    display:block;
+    content:"";
+    }
+    
+    .news1 {
+    background-color:white;
+    float:left;
+    position:relative;
+    left:30px;
+    color:black;
+    font-weight:bold;
+    border-left:3px solid red;
+    padding-left:10px;
+    height:50px;
+    width:100%;			/*also added here font-size:24px and font-stretch:100%, but it went off center, check it out later and make border same height*/
+    }
+    
+    .news1:after {		/*to try remove blank space James and news, didn't work*/
+    content:"";
+    display:block;
+    clear:both;
+    }
+    
