@@ -7,7 +7,7 @@
     background-color: #333;
     overflow:hidden;
     position:relative;
-    top:-10px;
+    /*top:-10px;  don't know why this was here but it's better without it*/
     }
     
     /*I added left:-10px but it amplified everything, like below comments, and now it won't go back */
