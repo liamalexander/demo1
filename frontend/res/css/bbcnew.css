@@ -163,3 +163,32 @@ section {
     height:50px;
     width:100%;
 }
+
+.headlinenews {			/*added today, want it next to the main container*/
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+}
+    
+.headlinenews1 {		/*maybe need to add clear property for these 3 when making next section*/
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+    margin-left:20px;
+}
+    
+.headlinenews2 {
+    float:left;
+    height:150px;
+    width:30%;
+    position:relative;
+    top:20px;
+    left:20px;
+    margin-left:20px;
+}
