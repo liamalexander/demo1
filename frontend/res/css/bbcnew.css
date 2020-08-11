@@ -170,7 +170,7 @@ section {
     width:30%;
     position:relative;
     top:20px;
-    left:20px;
+    left:30px;
 }
     
 .headlinenews1 {		/*maybe need to add clear property for these 3 when making next section*/
@@ -180,7 +180,7 @@ section {
     position:relative;
     top:20px;
     left:20px;
-    margin-left:20px;
+    margin-left:35px;
 }
     
 .headlinenews2 {
@@ -190,5 +190,5 @@ section {
     position:relative;
     top:20px;
     left:20px;
-    margin-left:20px;
+    margin-left:30px;
 }
