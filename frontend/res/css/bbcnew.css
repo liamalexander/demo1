@@ -164,7 +164,7 @@ section {
     width:100%;
 }
 
-.headlinenews {			/*added today, want it next to the main container*/
+/*.headlinenews {           ADD ALL BACK IN IF CLEAR DOESNT WORK			
     float:left;
     height:150px;
     width:30%;
@@ -173,7 +173,7 @@ section {
     left:30px;
 }
     
-.headlinenews1 {		/*maybe need to add clear property for these 3 when making next section*/
+.headlinenews1 {		
     float:left;
     height:150px;
     width:30%;
@@ -191,4 +191,45 @@ section {
     top:20px;
     left:20px;
     margin-left:30px;
+} */
+
+/*.headlinenews::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+.headlinenews1::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+.headlinenews2::after{
+    content: "";
+    display: block;
+    clear: left;
+}*/
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+}  
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.sport1 {
+    background-color:white;
+    float:left;
+    position:relative;
+    left:30px;
+    color:black;
+    font-weight:bold;
+    border-left:3px solid yellow;
+    padding-left:10px;
+    /*margin-top: 5px;*/
+    height:50px;
+    width:100%;
 }
