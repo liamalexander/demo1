@@ -255,12 +255,48 @@
 // console.log(random);
 // console.log(Math.round(random * 100));
 
-const paras = document.querySelectorAll('p');
-paras.forEach(p => {
-    if(p.textContent.includes('error')){
-        p.classList.add('error');
-    }
-    if(p.textContent.includes('success')){
-        p.classList.add('success');
-    }
-});
+// const paras = document.querySelectorAll('p');
+// paras.forEach(p => {
+//     if(p.textContent.includes('error')){
+//         p.classList.add('error');
+//     }
+//     if(p.textContent.includes('success')){
+//         p.classList.add('success');
+//     }
+// });
+
+// let user = {
+//     name: 'Liam',
+//     age: 33,
+//     location: 'Swansea',
+//     blogs: [
+//         {title : 'my blog', likes : 30},
+//         {title : 'fav places', likes : 50}
+//     ],
+//     login() {
+//         console.log('The user logged in')
+//     },
+//     logout() {
+//         console.log('The user logged out')
+//     },
+//     logBlogs() {
+//         console.log('The user has written:');
+//         this.blogs.forEach(blog => {
+//             console.log(`${blog.title} has got ${blog.likes} likes`);
+//         })
+//     }
+// };
+// user.logBlogs();
+
+// user.age = 30;
+// console.log(user);
+
+// const heads = document.querySelectorAll('h2');
+// heads.forEach(head => {
+//     if(head.textContent.includes('@')){
+//         head.classList.add('valid');
+//     }
+//     else {
+//         head.classList.add('invalid');
+//     }
+// });

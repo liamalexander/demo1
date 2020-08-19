@@ -50,3 +50,15 @@ header div a:hover {
     color: limegreen;
     border: 3px, dotted, limegreen;
 }
+
+.valid {
+    padding: 10px;
+    color:limegreen;
+    border: 1px solid limegreen;
+}
+
+.invalid {
+    padding: 10px;
+    color: crimson;
+    border: 1px solid crimson;
+}
