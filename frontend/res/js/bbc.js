@@ -10,7 +10,5 @@ function myFunction() {
   const searchBar = document.getElementById("searchBar");
   searchBar.addEventListener("keyup", e => {
     const searchString = e.target.value;
-    return(searchString);
     // console.log(searchString);
   });
-console.log(searchString);
