@@ -300,3 +300,38 @@
 //         head.classList.add('invalid');
 //     }
 // });
+
+// let user = {
+//     name: 'liam',
+//     age: 33,
+//     location: 'Swansea',
+//     blogs: [
+//         {title: 'blog1', likes: 35},
+//         {title: 'blog2', likes: 55}
+//     ],
+//     login() {
+//         console.log('The user logged in');
+//     },
+//     logout() {
+//         console.log('The user logged out');
+//     },
+//     logBlogs() {
+//         this.blogs.forEach(blog => {
+//             console.log(`The user has written: ${blog.title}, which has ${blog.likes} likes.`)
+//         })
+//     }
+// };
+
+// console.log(user);
+// user.logBlogs();
+
+// const heads = document.querySelectorAll('h2');
+
+// heads.forEach(head => {
+//     if(head.textContent.includes('@')){
+//         head.classList.add('valid');
+//     }
+//     else {
+//         head.classList.add('invalid');
+//     }
+// });
