@@ -367,13 +367,41 @@ elShip.textContent += shipping;
 let elTotal = document.getElementById("total");
 elTotal.textContent += total;
 
-function getSize(width, height, depth) {
+/*function getSize(width, height, depth) {
     let area = width * height;
     let volume = width * height * depth;
     let sizes = [area, volume];
     return sizes;
-}
-areaOne = getSize(5, 10, 3)[0];
+}*/
+
+/*areaOne = getSize(5, 10, 3)[0];
 volumeOne = getSize(5, 10, 3)[1];
 console.log(areaOne);
-console.log(volumeOne);
+console.log(volumeOne);*/
+
+
+// var greeting = "Hi ";
+// var name = "James, ";
+// var msg = "Please check your order:";
+// var welcome = greeting + name + msg;
+
+// var sign = "My Place";
+// var tiles = sign.length;
+// var cost = tiles * 10;
+// var shipping = 6;
+// var total = cost + shipping;
+
+// var elGreet = document.getElementById("greeting");
+// elGreet.textContent = welcome;
+
+// var elTiles = document.getElementById("tiles");
+// elTiles.textContent = tiles;
+
+// var elCost = document.getElementById("cost");
+// elCost.textContent += cost;
+
+// var elShip = document.getElementById("shipping");
+// elShip.textContent += shipping;
+
+// var elTotal = document.getElementById("total");
+// elTotal.textContent += total;
