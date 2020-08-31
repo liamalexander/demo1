@@ -340,3 +340,40 @@
 // searchBar.addEventListener("keyup", e => {
 //     const searchString = e.target.value;
 // });
+
+let greeting = 'Hi, ';
+let name = 'Molly! ';
+let message = 'Please check your order:';
+let welcome = greeting + name + message;
+
+let sign = 'Molly Place';
+let tiles = sign.length;
+let cost = tiles * 7;
+let shipping = 5;
+let total = cost + shipping;
+
+let el = document.getElementById("greeting");
+el.textContent = welcome;
+
+let elTiles = document.getElementById("tiles");
+elTiles.textContent = tiles;
+
+let elCost = document.getElementById("cost");
+elCost.textContent += cost;
+
+let elShip = document.getElementById("shipping");
+elShip.textContent += shipping;
+
+let elTotal = document.getElementById("total");
+elTotal.textContent += total;
+
+function getSize(width, height, depth) {
+    let area = width * height;
+    let volume = width * height * depth;
+    let sizes = [area, volume];
+    return sizes;
+}
+areaOne = getSize(5, 10, 3)[0];
+volumeOne = getSize(5, 10, 3)[1];
+console.log(areaOne);
+console.log(volumeOne);
