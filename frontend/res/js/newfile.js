@@ -405,3 +405,24 @@ console.log(volumeOne);*/
 
 // var elTotal = document.getElementById("total");
 // elTotal.textContent += total;
+
+// function Hotel(name, rooms, booked) {
+//     this.name = name;
+//     this.rooms = rooms;
+//     this.booked = booked;
+//     this.checkAvailability = function() {
+//         return this.rooms - this.booked;
+//     };
+// }
+
+// let quayHotel = new Hotel('Quay', 50, 25);
+// let parkHotel = new Hotel('Park', 100, 50);
+
+// console.log(quayHotel.name);
+// console.log(parkHotel.checkAvailability());
+
+// const random = Math.random();
+// console.log(Math.round(random * 100));
+
+// const random = Math.random();
+// console.log(Math.floor(random * 10));

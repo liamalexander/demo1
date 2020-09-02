@@ -12,3 +12,9 @@ function myFunction() {
     const searchString = e.target.value;
     // console.log(searchString);
   });
+
+  let today = new Date();
+  let todayShow = today.toDateString();
+
+  let todayDate = document.querySelector('time');
+  todayDate.textContent = todayShow;
