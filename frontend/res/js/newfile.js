@@ -491,4 +491,13 @@ function changeCorrect() {
     const correctMsg = document.getElementById("answer");
     correctMsg.textContent = "Correct!";
     correctMsg.textContent += " Federer won 5 titles between 2003-2007 and also in 2009, 2012 and 2017";
+    correctMsg.style.color = "green";
+}
+
+function changeColour1() {
+    const wrongA = document.getElementById("ans1b");
+    wrongA.style.backgroundColor = "red";
+    const incorrectMsg = document.getElementById("answer");
+    incorrectMsg.textContent = "Incorrect!";
+    incorrectMsg.style.color = "red";
 }
