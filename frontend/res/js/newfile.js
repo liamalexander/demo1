@@ -426,3 +426,69 @@ console.log(volumeOne);*/
 
 // const random = Math.random();
 // console.log(Math.floor(random * 10));
+
+var hotel = {
+    name: "Park",
+    roomRate: 240,
+    discount: 15,
+    offerPrice: function() {
+        var offerRate = this.roomRate * ((100 - this.discount) / 100);
+        return offerRate;
+    }
+}
+
+var hotelName, roomRate, specialRate;
+
+hotelName = document.getElementById("hotelName");
+roomRate = document.getElementById("roomRate");
+specialRate = document.getElementById("specialRate");
+
+hotelName.textContent = hotel.name;
+roomRate.textContent += '£' + hotel.roomRate.toFixed(2);
+specialRate.textContent += '£' + hotel.offerPrice().toFixed(2);
+
+var expiryMsg;
+var today;
+var elEnds;
+
+function offerExpires(today) {
+    var weekFromToday, day, date, month, year, dayNames, monthNames;
+    weekFromToday = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    monthNames = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 
+    'September', 'October', 'November', 'December'];
+    day = dayNames[weekFromToday.getDay()];
+    date = weekFromToday.getDate();
+    month = monthNames[weekFromToday.getMonth()];
+    year = weekFromToday.getFullYear();
+
+    expiryMsg = 'Offer expires next ';
+    expiryMsg += day + ' ' + ( `${+date} ${month} ${year}`);
+    return expiryMsg;
+}
+
+today = new Date();
+elEnds = document.getElementById("offerEnds");
+elEnds.textContent = offerExpires(today);
+
+// let ans1a = document.getElementById("ans1a");
+let ans1b = document.getElementById("ans1b");
+let correctAns1 = document.getElementById("corerctAns1");
+
+function changeColour() {
+    // document.body.style.backgroundColor = "red";
+    // document.getElementById("and1a").style.backgroundColor = "red";
+    const wrongA = document.getElementById("ans1a");
+    wrongA.style.backgroundColor = "red";
+    const incorrectMsg = document.getElementById("answer");
+    incorrectMsg.textContent = "Incorrect!";
+    incorrectMsg.style.color = "red";
+    // window.setTimeout("yourFunction()", 10000);
+}
+function changeCorrect() {
+    const correct1 = document.getElementById("correctAns1");
+    correct1.style.backgroundColor = "green";
+    const correctMsg = document.getElementById("answer");
+    correctMsg.textContent = "Correct!";
+    correctMsg.textContent += " Federer won 5 titles between 2003-2007 and also in 2009, 2012 and 2017";
+}
