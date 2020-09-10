@@ -472,32 +472,246 @@ elEnds = document.getElementById("offerEnds");
 elEnds.textContent = offerExpires(today);
 
 // let ans1a = document.getElementById("ans1a");
-let ans1b = document.getElementById("ans1b");
-let correctAns1 = document.getElementById("corerctAns1");
+// let ans1b = document.getElementById("ans1b");
+// let correctAns1 = document.getElementById("corerctAns1");
 
 function changeColour() {
-    // document.body.style.backgroundColor = "red";
     // document.getElementById("and1a").style.backgroundColor = "red";
     const wrongA = document.getElementById("ans1a");
     wrongA.style.backgroundColor = "red";
+    wrongA.disabled = true;
     const incorrectMsg = document.getElementById("answer");
     incorrectMsg.textContent = "Incorrect!";
+    incorrectMsg.textContent += " Federer has won 8 titles (2003-2007, 2009, 2012, 2017)";
     incorrectMsg.style.color = "red";
+    const wrongB = document.getElementById("ans1b").disabled = true;
+    const showCorrect1 = document.getElementById("correctAns1");
+    showCorrect1.style.backgroundColor = "green";
+    showCorrect1.disabled = true;
     // window.setTimeout("yourFunction()", 10000);
 }
 function changeCorrect() {
     const correct1 = document.getElementById("correctAns1");
     correct1.style.backgroundColor = "green";
+    correct1.disabled = true;
     const correctMsg = document.getElementById("answer");
     correctMsg.textContent = "Correct!";
-    correctMsg.textContent += " Federer won 5 titles between 2003-2007 and also in 2009, 2012 and 2017";
+    correctMsg.textContent += " Federer has won 8 titles (2003-2007, 2009, 2012, 2017)";
     correctMsg.style.color = "green";
+    const wrongA = document.getElementById("ans1a").disabled = true;
+    const wrongB = document.getElementById("ans1b").disabled = true;
 }
 
 function changeColour1() {
-    const wrongA = document.getElementById("ans1b");
-    wrongA.style.backgroundColor = "red";
+    const wrongB = document.getElementById("ans1b");
+    wrongB.style.backgroundColor = "red";
+    wrongB.disabled = true;
     const incorrectMsg = document.getElementById("answer");
     incorrectMsg.textContent = "Incorrect!";
+    incorrectMsg.textContent += " Federer has won 8 titles (2003-2007, 2009, 2012, 2017)";
     incorrectMsg.style.color = "red";
+    const wrongA = document.getElementById("ans1a").disabled = true;
+    const showCorrect1 = document.getElementById("correctAns1");
+    showCorrect1.style.backgroundColor = "green";
+    showCorrect1.disabled = true;
+}
+
+function changeColour2() {
+    const wrong2A = document.getElementById("ans2a");
+    wrong2A.style.backgroundColor = "red";
+    wrong2A.disabled = true;
+    const incorrectMsg2 = document.getElementById("answer2");
+    incorrectMsg2.textContent = "Incorrect!";
+    incorrectMsg2.textContent += " Nadal has lost 2 completed matches (2009 vs Soderling, 2015 vs Djokovic)";
+    incorrectMsg2.style.color = "red";
+    const wrong2C = document.getElementById("ans2c").disabled = true;
+    const showCorrect2 = document.getElementById("correctAns2");
+    showCorrect2.style.backgroundColor = "green";
+    showCorrect2.disabled = true;
+}
+
+function changeCorrect2() {
+    const correct2 = document.getElementById("correctAns2");
+    correct2.style.backgroundColor = "green";
+    correct2.disabled = true;
+    const correct2Msg = document.getElementById("answer2");
+    correct2Msg.textContent = "Correct!";
+    correct2Msg.textContent += " Nadal has lost 2 completed matches (2009 vs Soderling, 2015 vs Djokovic)";
+    correct2Msg.style.color = "green";
+    const wrong2A = document.getElementById("ans2a").disabled = true;
+    const wrong2C = document.getElementById("ans2c").disabled = true;
+}
+
+function changeColour2c() {
+    const wrong2C = document.getElementById("ans2c");
+    wrong2C.style.backgroundColor = "red";
+    wrong2C.disabled = true;
+    const incorrectMsg2 = document.getElementById("answer2");
+    incorrectMsg2.textContent = "Incorrect!";
+    incorrectMsg2.textContent += " Nadal has lost 2 completed matches (2009 vs Soderling, 2015 vs Djokovic)";
+    incorrectMsg2.style.color = "red";
+    const wrong2A = document.getElementById("ans2a").disabled = true;
+    const showCorrect2 = document.getElementById("correctAns2");
+    showCorrect2.style.backgroundColor = "green";
+    showCorrect2.disabled = true;
+}
+
+function changeColour3() {
+    const wrong3A = document.getElementById("ans3a");
+    wrong3A.style.backgroundColor = "red";
+    wrong3A.disabled = true;
+    const incorrectMsg2 = document.getElementById("answer3");
+    incorrectMsg2.textContent = "Incorrect!";
+    incorrectMsg2.textContent += " Navratilova won half of her Grand Slam singles titles at Wimbledon";
+    incorrectMsg2.style.color = "red";
+    const wrong3C = document.getElementById("ans3c").disabled = true;
+    const showCorrect3 = document.getElementById("correctAns3");
+    showCorrect3.style.backgroundColor = "green";
+    showCorrect3.disabled = true;
+}
+
+function changeCorrect3() {
+    const correct3 = document.getElementById("correctAns3");
+    correct3.style.backgroundColor = "green";
+    correct3.disabled = true;
+    const correct3Msg = document.getElementById("answer3");
+    correct3Msg.textContent = "Correct!";
+    correct3Msg.textContent += " Navratilova won half of her Grand Slam singles titles at Wimbledon";
+    correct3Msg.style.color = "green";
+    const wrong3A = document.getElementById("ans3a").disabled = true;
+    const wrong3C = document.getElementById("ans3c").disabled = true;
+}
+
+function changeColour3c() {
+    const wrong3C = document.getElementById("ans3c");
+    wrong3C.style.backgroundColor = "red";
+    wrong3C.disabled = true;
+    const incorrectMsg3 = document.getElementById("answer3");
+    incorrectMsg3.textContent = "Incorrect!";
+    incorrectMsg3.textContent += " Navratilova won half of her Grand Slam singles titles at Wimbledon";
+    incorrectMsg3.style.color = "red";
+    const wrong3A = document.getElementById("ans3a").disabled = true;
+    const showCorrect3 = document.getElementById("correctAns3");
+    showCorrect3.style.backgroundColor = "green";
+    showCorrect3.disabled = true;
+}
+
+function changeCorrect4() {
+    const correct4 = document.getElementById("correctAns4");
+    correct4.style.backgroundColor = "green";
+    correct4.disabled = true;
+    const correct4Msg = document.getElementById("answer4");
+    correct4Msg.textContent = "Correct!";
+    correct4Msg.textContent += " Chrissy won seven singles titles at the French Open";
+    correct4Msg.style.color = "green";
+    const wrong4B = document.getElementById("ans4b").disabled = true;
+    const wrong4C = document.getElementById("ans4c").disabled = true;
+}
+
+function changeColour4() {
+    const wrong4B = document.getElementById("ans4b");
+    wrong4B.style.backgroundColor = "red";
+    wrong4B.disabled = true;
+    const incorrect4Msg = document.getElementById("answer4");
+    incorrect4Msg.textContent = "Incorrect!";
+    incorrect4Msg.textContent += " Chrissy won seven singles titles at the French Open";
+    incorrect4Msg.style.color = "red";
+    const wrong4C = document.getElementById("ans4c").disabled = true;
+    const showCorrect4 = document.getElementById("correctAns4");
+    showCorrect4.style.backgroundColor = "green";
+    showCorrect4.disabled = true;
+}
+
+function changeColour4c() {
+    const wrong4C = document.getElementById("ans4c");
+    wrong4C.style.backgroundColor = "red";
+    wrong4C.disabled = true;
+    const incorrect4Msg = document.getElementById("answer4");
+    incorrect4Msg.textContent = "Incorrect!";
+    incorrect4Msg.textContent += " Chrissy won seven singles titles at the French Open";
+    incorrect4Msg.style.color = "red";
+    const wrong4B = document.getElementById("ans4b").disabled = true;
+    const showCorrect4 = document.getElementById("correctAns4");
+    showCorrect4.style.backgroundColor = "green";
+    showCorrect4.disabled = true;
+}
+
+function changeColour5() {
+    const wrongA = document.getElementById("ans5a");
+    wrongA.style.backgroundColor = "red";
+    wrongA.disabled = true;
+    const incorrect5Msg = document.getElementById("answer5");
+    incorrect5Msg.textContent = "Incorrect!";
+    incorrect5Msg.textContent += " Steffi Graf is the only player, male or female to achieve Calender Year Golden Slam";
+    incorrect5Msg.style.color = "red";
+    const wrongB = document.getElementById("ans5b").disabled = true;
+    const showCorrect5 = document.getElementById("correctAns5");
+    showCorrect5.style.backgroundColor = "green";
+    showCorrect5.disabled = true;
+}
+
+function changeCorrect5() {
+    const correct5 = document.getElementById("correctAns5");
+    correct5.style.backgroundColor = "green";
+    correct5.disabled = true;
+    const correct5Msg = document.getElementById("answer5");
+    correct5Msg.textContent = "Correct!";
+    correct5Msg.textContent += " Steffi Graf is the only player, male or female to achieve Calender Year Golden Slam";
+    correct5Msg.style.color = "green";
+    const wrongA = document.getElementById("ans5a").disabled = true;
+    const wrongB = document.getElementById("ans5b").disabled = true;
+}
+
+function changeColour5b() {
+    const wrongB = document.getElementById("ans5b");
+    wrongB.style.backgroundColor = "red";
+    wrongB.disabled = true;
+    const incorrect5Msg = document.getElementById("answer5");
+    incorrect5Msg.textContent = "Incorrect!";
+    incorrect5Msg.textContent += " Steffi Graf is the only player, male or female to achieve Calender Year Golden Slam";
+    incorrect5Msg.style.color = "red";
+    const wrongA = document.getElementById("ans5a").disabled = true;
+    const showCorrect5 = document.getElementById("correctAns5");
+    showCorrect5.style.backgroundColor = "green";
+    showCorrect5.disabled = true;
+}
+
+function changeCorrect6() {
+    const correct6 = document.getElementById("correctAns6");
+    correct6.style.backgroundColor = "green";
+    correct6.disabled = true;
+    const correct6Msg = document.getElementById("answer6");
+    correct6Msg.textContent = "Correct!";
+    correct6Msg.textContent += " Graf won every major tournament in 1988, winning her only Olympic Gold Medal in Seoul";
+    correct6Msg.style.color = "green";
+    const wrong6B = document.getElementById("ans6b").disabled = true;
+    const wrong6C = document.getElementById("ans6c").disabled = true;
+}
+
+function changeColour6() {
+    const wrong6B = document.getElementById("ans6b");
+    wrong6B.style.backgroundColor = "red";
+    wrong6B.disabled = true;
+    const incorrect6Msg = document.getElementById("answer6");
+    incorrect6Msg.textContent = "Incorrect!";
+    incorrect6Msg.textContent += " Graf won every major tournament in 1988, winning her only Olympic Gold Medal in Seoul";
+    incorrect6Msg.style.color = "red";
+    const wrong6C = document.getElementById("ans6c").disabled = true;
+    const showCorrect6 = document.getElementById("correctAns6");
+    showCorrect6.style.backgroundColor = "green";
+    showCorrect6.disabled = true;
+}
+
+function changeColour6c() {
+    const wrong6C = document.getElementById("ans6c");
+    wrong6C.style.backgroundColor = "red";
+    wrong6C.disabled = true;
+    const incorrect6Msg = document.getElementById("answer6");
+    incorrect6Msg.textContent = "Incorrect!";
+    incorrect6Msg.textContent += " Graf won every major tournament in 1988, winning her only Olympic Gold Medal in Seoul";
+    incorrect6Msg.style.color = "red";
+    const wrong6B = document.getElementById("ans6b").disabled = true;
+    const showCorrect6 = document.getElementById("correctAns6");
+    showCorrect6.style.backgroundColor = "green";
+    showCorrect6.disabled = true;
 }
