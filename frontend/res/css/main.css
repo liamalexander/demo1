@@ -137,3 +137,23 @@ h1 {
     top: 7px;
     right: 15px;
 }
+
+/* #quizQuestions {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+} */
+
+#quizQuestions h3 /*used to be p instead of h2*/{
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    /* display: grid; */
+    /* grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image'; */
+    text-align: center;
+}
