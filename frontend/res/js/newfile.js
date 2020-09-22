@@ -715,3 +715,12 @@ function changeColour6c() {
     showCorrect6.style.backgroundColor = "green";
     showCorrect6.disabled = true;
 }
+
+// let i = 1;
+// let msg = '';
+
+// while (i < 11) {
+//     msg += i + ' x 5 = ' + (i * 5) + '\n';
+//     i++;
+// }
+// console.log(msg);
