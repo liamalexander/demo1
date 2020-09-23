@@ -724,3 +724,25 @@ function changeColour6c() {
 //     i++;
 // }
 // console.log(msg);
+
+// let scores = [24, 31, 17];
+// let arrayLength = scores.length;
+// let round = 0;
+// let msg = '';
+// let i;
+
+// for (i = 0; i < arrayLength; i++) {
+//     round = (i + 1);
+//     msg += 'Round ' + round + ' : ';
+//     msg += scores[i] + '\n';
+// }
+// console.log(msg);
+
+// let i = 1;
+// let msg = '';
+
+// while (i < 11) {
+//     msg += i + ' x 7 = ' + (i * 7) + '\n';
+//     i++;
+// }
+// console.log(msg);
