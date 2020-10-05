@@ -164,6 +164,11 @@ nav a {
     background-color: #E3242B;
 }
 
+.newsNav {
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
 .newsNav a {
     float: left;
     display: block;
@@ -172,6 +177,18 @@ nav a {
     padding: 5px 10px;
     text-decoration: none;
     border-right: none;
+}
+
+.pageBanner h2 {
+    margin-top: 0%;
+    margin-left: 35px;
+    font-size: 35px;
+    margin-bottom: 0%;
+}
+
+.pageBanner nav {
+    margin-left: 25px;
+    margin-top: 5px;
 }
 
 .bantext {
