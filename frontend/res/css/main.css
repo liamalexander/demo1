@@ -156,6 +156,20 @@ h1 {
     text-align: center;
 }
 
+.box {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 3px;
+}  
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 @media only screen and (max-width:800px) {
     .box {
         width: 50%;
