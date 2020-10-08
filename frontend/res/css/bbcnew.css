@@ -373,6 +373,23 @@ nav a {
     width:100%;
 }
 
+.culture h2 {
+    background-color: indigo;
+    color: white;
+    display: inline-block;
+    float: left;
+    margin-right: 100px;
+}
+
+.culture nav a {
+        display: block;
+        text-align: center;
+        color: darkgray;
+        padding: 5px 15px;
+        text-decoration: none;
+        border: none;
+}
+
 /*@media only screen and (max-width:800px) { 
     For tablets: 
 .grid-container, .grid-container div, .item1, .item2, .item3 {
