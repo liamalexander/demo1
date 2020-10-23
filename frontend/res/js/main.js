@@ -134,3 +134,58 @@ window.addEventListener("load", () => {
     })
 
 });
+
+function getTarget(e) {
+    if (!e) {
+        e = window.event;
+    }
+    return e.target || e.srcElement;
+}
+
+function itemDone(e) {
+    let target, elParent, elFav;
+    target = getTarget(e);
+    elFav = document.getElementById("favPlayers");
+    elParent = target.parentNode;
+    elFav.appendChild(elParent);
+    if (e.preventDefault) {
+        e.preventDefault();
+    } else {
+        e.returnValue = false;
+    }
+}
+
+const el = document.getElementById("listPlayers");
+if (el.addEventListener) {
+    el.addEventListener('click', function(e) {
+        itemDone(e);
+    }, false);
+} else {
+    el.attachEvent('onclick', function(e) {
+        itemDone(e);
+    });
+}
+
+function itemRemove(e) {
+    let target, elParent, elOther;
+    target = getTarget(e);
+    elOther = document.getElementById("listPlayers");
+    elParent = target.parentNode;
+    elOther.appendChild(elParent);
+    if (e.preventDefault) {
+        e.preventDefault();
+    } else {
+    e.returnValue = false;
+    }
+}
+
+const elRemove = document.getElementById("favPlayers");
+if (elRemove.addEventListener) {
+    elRemove.addEventListener('click', function(e) {
+        itemRemove(e);
+    }, false);
+} else {
+    elRemove.attachEvent('onclick', function(e) {
+        itemRemove(e);
+    });
+}
