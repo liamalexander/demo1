@@ -189,3 +189,18 @@ if (elRemove.addEventListener) {
         itemRemove(e);
     });
 }
+
+var elform = document.getElementById("form");
+var elPackage = document.getElementsByName("package");
+var elHint = document.getElementById("hint");
+
+function packageHint() {
+    var package = this.options[this.SelectedIndex].value;
+    if (package == "yearly") {
+        elHint.innerHTML = "Wise choice";
+    } else {
+        elHint.innerHTML = "Save £10 with yearly package!";
+    }
+}
+
+elform.addEventListener('change', packageHint, false);
