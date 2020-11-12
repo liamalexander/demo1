@@ -849,22 +849,22 @@ window.onclick = function(event) {
     }
 }
 
-var input = document.getElementById("searchBar");
-var playerList = document.getElementById("playerList");
-var filter = input.nodeValue.toUpperCase();
-var li = playerList.getElementsByTagName("li");
-var i, txtValue, a;
+// var input = document.getElementById("searchBar");
+// var playerList = document.getElementById("playerList");
+// var filter = input.nodeValue.toUpperCase();
+// var li = playerList.getElementsByTagName("li");
+// var i, txtValue, a;
 
-function searchFilter() {
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
-        }
-    }
-}
+// function searchFilter() {
+//     for (i = 0; i < li.length; i++) {
+//         a = li[i].getElementsByTagName("a")[0];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//           li[i].style.display = "";
+//         } else {
+//           li[i].style.display = "none";
+//         }
+//     }
+// }
 
-input.addEventListener('keyup', searchFilter, false);
+// input.addEventListener('keyup', searchFilter, false);
