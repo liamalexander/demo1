@@ -204,3 +204,32 @@ function packageHint() {
 }
 
 elform.addEventListener('change', packageHint, false);
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+function openBio() {
+    modal.style.display = "block";
+}
+
+btn.addEventListener('click', openBio, false);
+
+// When the user clicks on <span> (x), close the modal
+function closeBio() {
+    modal.style.display = "none";
+}
+
+span.addEventListener("click", closeBio, false);
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
