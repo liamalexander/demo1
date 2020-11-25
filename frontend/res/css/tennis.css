@@ -28,47 +28,11 @@ header div a:hover {
     background-size: cover;
 }
 
-/*#newsletter-wrapper {
-    margin-top: 50px;
-    margin-left: 20px;
-}
-
-#successMessage {
-    display:none;
-}
-
-.error {
-    padding: 10px;
-    color: crimson;
-    border: 3px, dotted, crimson;
-}
-
-.success {
-    padding: 10px;
-    color: limegreen;
-    border: 3px, dotted, limegreen;
-}
-
-.valid {
-    padding: 10px;
-    color:limegreen;
-    border: 1px solid limegreen;
-}
-
-.invalid {
-    padding: 10px;
-    color: crimson;
-    border: 1px solid crimson;
-} */
-
 body {
     font-family: sans-serif;
     background-color: #111d4a;
 }
 
-* {
-    box-sizing: border-box;
-}
 h1 {
     color: #eee;
     margin-bottom: 30px;
