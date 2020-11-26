@@ -388,4 +388,122 @@ function searchPlayer() {
     }
 }
 
+
+
 searchbar.addEventListener("keyup", searchPlayer, false);
+
+//Tried to copy Ally's modal here
+
+// window.onload = () => {
+//     const players1 = [{
+//         "id": 1,
+//         "name": "Roger Federer",
+//         "dob": "21-08-88",
+//         "slams": 20
+//       }, {
+//         "id": 2,
+//         "name": "Rafael Nadal",
+//         "dob": "21-08-88",
+//         "slams": 20
+//       }, {
+//         "id": 3,
+//         "name": "Andy Murray",
+//         "dob": "21-08-88",
+//         "slams": 3
+//       }, {
+//         "id": 4,
+//         "name": "Novak Djokovic",
+//         "dob": "21-08-88",
+//         "slams": 17
+//       }
+//     ];
+
+//     const createPlayerCard = (player) => {
+//         const nameTag = document.createElement("h2");
+//         const dobTag = document.createElement("p");
+//         const slamTag = document.createElement("p");
+//         const playerCard = document.createElement("div");
+    
+//         nameTag.innerHTML = player.name;
+//         dobTag.innerHTML = player.dob;
+//         slamTag.innerHTML = player.slams;
+    
+//         playerCard.classList.add("player");
+    
+//         playerCard.appendChild(nameTag);
+//         playerCard.appendChild(dobTag);
+//         playerCard.appendChild(slamTag);
+    
+//         return playerCard;
+//       };
+    
+//       const init = () => {
+//         const wrapper = document.getElementById("playerList1");
+    
+//         for (let player of players) {
+//           const playerCard = createPlayerCard(player);
+//           wrapper.appendChild(playerCard);
+//     }
+//   };
+
+//   init();
+// };
+
+//  MODAL EXAMPLE I DID WITH BUTTONS ONLY FED AND DJOK
+let modalBtn = document.getElementById("modal-btn")
+let modal = document.querySelector(".modal")
+let closeBtn = document.querySelector(".close-btn")
+modalBtn.onclick = function(){
+  modal.style.display = "block"
+}
+closeBtn.onclick = function(){
+  modal.style.display = "none"
+}
+window.onclick = function(e){
+  if(e.target == modal){
+    modal.style.display = "none"
+  }
+}
+
+// let modalBtn = document.getElementsByTagName("button[i]");
+// let modal = document.querySelectorAll(".modal");
+// let closeBtn = document.querySelectorAll(".close-btn");
+// let target = e.target;
+// modalBtn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// var btn = document.querySelectorAll("button");
+
+// // All page modals
+// var modals = document.querySelectorAll('.modal');
+
+// // Get the <span> element that closes the modal
+// var spans = document.getElementsByClassName("close-btn");
+
+// // When the user clicks the button, open the modal
+// for (var i = 0; i < btn.length; i++) {
+//  btn[i].onclick = function(e) {
+//     e.preventDefault();
+//     modal = document.querySelector(e.target.getAttribute("href"));
+//     modal.style.display = "block";
+//  }
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// for (var i = 0; i < spans.length; i++) {
+//  spans[i].onclick = function() {
+//     for (var index in modals) {
+//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+//     }
+//  }
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target.classList.contains('modal')) {
+//      for (var index in modals) {
+//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+//      }
+//     }
+// }
