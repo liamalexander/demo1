@@ -450,20 +450,20 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 // };
 
 //  MODAL EXAMPLE I DID WITH BUTTONS ONLY FED AND DJOK
-let modalBtn = document.getElementById("modal-btn")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-}
-closeBtn.onclick = function(){
-  modal.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
-  }
-}
+// let modalBtn = document.getElementById("modal-btn")
+// let modal = document.querySelector(".modal")
+// let closeBtn = document.querySelector(".close-btn")
+// modalBtn.onclick = function(){
+//   modal.style.display = "block"
+// }
+// closeBtn.onclick = function(){
+//   modal.style.display = "none"
+// }
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.style.display = "none"
+//   }
+// }
 
 // let modalBtn = document.getElementsByTagName("button[i]");
 // let modal = document.querySelectorAll(".modal");
@@ -506,4 +506,28 @@ window.onclick = function(e){
 //       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
 //      }
 //     }
+// }
+
+// New try at modal
+// var modal = document.getElementsByClassName("playerModal");
+
+// var closeModal = document.getElementsByClassName("close-btn")[0];
+
+// var modalContent = document.getElementsByClassName("modalContent");
+
+// function playerModal() {
+//   modalContent.style.display = "block";
+// }
+// modal.addEventListener("click", playerModal, false);
+
+// function closePlayerModal() {
+//   modalContent.style.display = "none";
+// }
+
+// closeModal.addEventListener("click", closePlayerModal, false);
+
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modalContent.style.display = "none";
+//   }
 // }
