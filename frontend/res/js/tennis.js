@@ -252,33 +252,33 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-      }
     }
-  }
+}
 
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn1')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content1");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content1");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    }
     }
 }
 
@@ -286,16 +286,16 @@ function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn2')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content2");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    }
     }
 }
 
@@ -303,16 +303,16 @@ function myFunction3() {
     document.getElementById("myDropdown3").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn3')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content3");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content3");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    }
     }
 }
 
@@ -320,16 +320,16 @@ function myFunction4() {
     document.getElementById("myDropdown4").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn4')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content4");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content4");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    }
     }
 }
 
@@ -337,16 +337,16 @@ function myFunction5() {
     document.getElementById("myDropdown5").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn5')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content5");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        var dropdowns = document.getElementsByClassName("dropdown-content5");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    }
     }
 }
 
@@ -373,22 +373,26 @@ window.onclick = function(event) {
 // SEARCH BAR CODE - CANT GET IT TO WORK WITH THE CARDS, BUT WORKS AS A GENERAL SEARCH BAR ON INDEX FILE
 const searchbar = document.getElementById("searchBar");
 
-function searchPlayer() {
-    let input = document.getElementById("searchBar").value;
-    input = input.toLowerCase();
-    let x = document.getElementsByClassName("player");
+function toogglePlayerCard(playerCard, state) {
+    playerCard.style.display = state ? "grid" : "none";
+}
 
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
-        }
-        else {
-            x[i].style.display = "grid";
+function searchPlayer(e) {
+    const input = e.target.value.toLowerCase();
+
+    let playerCards = document.getElementsByClassName("player");
+
+    for (let player of playerCards) {
+        const playerNameTag = player.getElementsByClassName("name")[0]
+        const playerName = playerNameTag.innerHTML.toLowerCase();
+
+        if (playerName.includes(input)) {
+            toogglePlayerCard(player, true);
+        } else {
+            toogglePlayerCard(player, false);
         }
     }
 }
-
-
 
 searchbar.addEventListener("keyup", searchPlayer, false);
 
@@ -423,23 +427,23 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 //         const dobTag = document.createElement("p");
 //         const slamTag = document.createElement("p");
 //         const playerCard = document.createElement("div");
-    
+
 //         nameTag.innerHTML = player.name;
 //         dobTag.innerHTML = player.dob;
 //         slamTag.innerHTML = player.slams;
-    
+
 //         playerCard.classList.add("player");
-    
+
 //         playerCard.appendChild(nameTag);
 //         playerCard.appendChild(dobTag);
 //         playerCard.appendChild(slamTag);
-    
+
 //         return playerCard;
 //       };
-    
+
 //       const init = () => {
 //         const wrapper = document.getElementById("playerList1");
-    
+
 //         for (let player of players) {
 //           const playerCard = createPlayerCard(player);
 //           wrapper.appendChild(playerCard);
@@ -494,7 +498,7 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 // for (var i = 0; i < spans.length; i++) {
 //  spans[i].onclick = function() {
 //     for (var index in modals) {
-//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
 //     }
 //  }
 // }
@@ -503,7 +507,7 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 // window.onclick = function(event) {
 //     if (event.target.classList.contains('modal')) {
 //      for (var index in modals) {
-//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+//       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
 //      }
 //     }
 // }
