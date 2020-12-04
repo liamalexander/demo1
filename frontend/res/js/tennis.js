@@ -368,17 +368,44 @@ function searchPlayer(e) {
 
 searchbar.addEventListener("keyup", searchPlayer, false);
 
+//NEW MODAL TRY AFTER WORKING ON FUTURE WITH 2 PLAYERS
+
+let modalBtns = document.querySelectorAll(".modal-open");
+
+modalBtns.forEach(function(btn) {
+    btn.onclick = function() {
+        let modal = btn.getAttribute("data-modal");
+    document.getElementById(modal).style.display = "block";
+    };
+});
+
+let closeBtns = document.querySelectorAll(".close-btn");
+
+closeBtns.forEach(function(btn) {
+    btn.onclick = function() {
+        let modal = (btn.closest(".modal").style.display = "none");
+    };
+});
+
+window.onclick = function(e) {
+    if (e.target.className === "modal") {
+        e.target.style.display = "none";
+    }
+};
+
+//END OF NEW TRY AFTER WORKING ON FUTURE WITH 2 PLAYERS
+
 //Modal try in results
 
-const modalButton = document.getElementById("modal-btn");
-const modalElement = document.getElementsByClassName("modal");
-const modalContent1 = document.getElementsByClassName("modal-content");
+// const modalButton = document.getElementById("modal-btn");
+// const modalElement = document.getElementsByClassName("modal");
+// const modalContent1 = document.getElementsByClassName("modal-content");
 
-function openPlayerModal() {
-    modalElement.style.display = "grid";
-}
+// function openPlayerModal() {
+//     modalElement.style.display = "grid";
+// }
 
-modalButton.addEventListener("click", openPlayerModal, false);
+// modalButton.addEventListener("click", openPlayerModal, false);
 
 //  MODAL EXAMPLE I DID WITH BUTTONS ONLY FED AND DJOK
 // let modalBtn = document.getElementById("modal-btn")
