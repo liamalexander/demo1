@@ -43,7 +43,7 @@ h1 {
     margin-bottom: 30px;
 }
 .container {
-    padding: 40px;
+    padding: 50px;
     margin: 0 auto;
     max-width: 1000px;
     text-align: center;
@@ -146,6 +146,7 @@ h1 {
     background-color:  #111d4a;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -173,11 +174,11 @@ h1 {
 }
 
 .dropbtn3:hover, .dropbtn3:focus {
-    background-color: darkred;
+    background-color: purple;
 }
 
 .dropbtn4:hover, .dropbtn4:focus {
-    background-color: purple;
+    background-color: darkred;
 }
 
 .dropbtn5:hover, .dropbtn5:focus {
@@ -233,34 +234,15 @@ h1 {
     background: #55ACEE;
     color: white;
 }
-
-    /* #searchbar {
-        margin-left: 15%;
-        padding: 15px;
-        border-radius: 10px;
-    }
-    input[type="text"] {
-        width: 30%;
-        -webkit-transition: width 0.15s ease-in-out;
-        transition: width 0.15s ease-in-out;
-    }
-    input[type="text"]:focus {
-        width: 70%;
-    }
-    #playerList {
-        font-size: 1.5em;
-        margin-left: 90px;
-    }
-    .player {
-        display: list-item;
-    } */
-
 /* MODAL BUTTON EXAMPLE WITH DJOK AND FED*/
-/* .modal-btn {
-    display: flex;
-    z-index: 2;
-    padding-bottom: 50px;
+.modal-btn {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -299,7 +281,7 @@ h1 {
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-} */
+}
 
 /* new try at modal here */
 /* .playerModal {
@@ -315,7 +297,7 @@ h1 {
     background-color: rgba(0,0,0,0.4);
 } */
 
-.modalContent {
+/* .modalContent {
     display: none;
     background-color: #fefefe;
     margin: 15% auto;
@@ -342,7 +324,7 @@ h1 {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 .aus {
     background-color:lightseagreen;

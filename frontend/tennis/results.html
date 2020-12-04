@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/frontend/res/css/normalise.css">
     <link rel="stylesheet" href="/frontend/res/css/tennis.css">
-    <link rel="stylesheet" href="res/css/normalise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
         </div>
     </header>
 
-    <button id="modal-btn">Roger Federer</button>
+    <button id="modal-btn" style="margin: 50px;">Roger Federer</button>
     <div class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
@@ -49,7 +50,7 @@
       </div>
     </div>
 
-    <button class="modal-btn" href="#modal2">Novak Djokovic</button> <!--was id="modal-btn" no href-->
+    <button class="modal-btn" href="#modal2">Novak Djokovic</button>
     <div class="modal" href="#modal2">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
@@ -79,16 +80,18 @@
         </table>
       </div>
     </div>
-    <div id="playerList1"></div>
 
-    <!-- <script type="text/javascript" src="/frontend/res/js/tennis.js"></script> -->
     <div class="footer">
-        <a href="https://www.facebook.com/bbcnews/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/bbcnews?lang=en" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/bbcnews/" target="_blank" class="social-icon">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/bbcnews?lang=en" target="_blank" class="social-icon">
+          <i class="fa fa-twitter"></i>
+        </a>
         <p>Copyright Liam's Tennis Database 2020</p>
-    </div>
+      </div>
     
-    <script src="/frontend/res/js/newfile.js"></script>
+    <script src="/frontend/res/js/tennis.js"></script>
 
 </body>
 </html>

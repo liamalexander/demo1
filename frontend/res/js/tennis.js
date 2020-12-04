@@ -1,14 +1,7 @@
-// const searchBar = document.getElementById("searchBar");
-// searchBar.addEventListener("keyup", e => {
-//     const searchString = e.target.value;
-// });
-
-// let ans1a = document.getElementById("ans1a");
-// let ans1b = document.getElementById("ans1b");
-// let correctAns1 = document.getElementById("corerctAns1");
-
+//Change into 1 function for both incorrect, add class to each instead of id and put all the changes into css
+// with addClass / attribute to make the code shorter
+// add each 3 answers in each q to an array to make it only 1 function?
 function changeColour() {
-    // document.getElementById("and1a").style.backgroundColor = "red";
     const wrongA = document.getElementById("ans1a");
     wrongA.style.backgroundColor = "red";
     wrongA.disabled = true;
@@ -20,7 +13,7 @@ function changeColour() {
     const showCorrect1 = document.getElementById("correctAns1");
     showCorrect1.style.backgroundColor = "green";
     showCorrect1.disabled = true;
-    // window.setTimeout("yourFunction()", 10000);
+
 }
 function changeCorrect() {
     const correct1 = document.getElementById("correctAns1");
@@ -350,30 +343,9 @@ window.onclick = function (event) {
     }
 }
 
-// var input = document.getElementById("searchBar");
-// var playerList = document.getElementById("playerList");
-// var filter = input.nodeValue.toUpperCase();
-// var li = playerList.getElementsByTagName("li");
-// var i, txtValue, a;
-
-// function searchFilter() {
-//     for (i = 0; i < li.length; i++) {
-//         a = li[i].getElementsByTagName("a")[0];
-//         txtValue = a.textContent || a.innerText;
-//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//           li[i].style.display = "";
-//         } else {
-//           li[i].style.display = "none";
-//         }
-//     }
-// }
-
-// input.addEventListener('keyup', searchFilter, false);
-
-// SEARCH BAR CODE - CANT GET IT TO WORK WITH THE CARDS, BUT WORKS AS A GENERAL SEARCH BAR ON INDEX FILE
 const searchbar = document.getElementById("searchBar");
 
-function toogglePlayerCard(playerCard, state) {
+function togglePlayerCard(playerCard, state) {
     playerCard.style.display = state ? "grid" : "none";
 }
 
@@ -387,71 +359,26 @@ function searchPlayer(e) {
         const playerName = playerNameTag.innerHTML.toLowerCase();
 
         if (playerName.includes(input)) {
-            toogglePlayerCard(player, true);
+            togglePlayerCard(player, true);
         } else {
-            toogglePlayerCard(player, false);
+            togglePlayerCard(player, false);
         }
     }
 }
 
 searchbar.addEventListener("keyup", searchPlayer, false);
 
-//Tried to copy Ally's modal here
+//Modal try in results
 
-// window.onload = () => {
-//     const players1 = [{
-//         "id": 1,
-//         "name": "Roger Federer",
-//         "dob": "21-08-88",
-//         "slams": 20
-//       }, {
-//         "id": 2,
-//         "name": "Rafael Nadal",
-//         "dob": "21-08-88",
-//         "slams": 20
-//       }, {
-//         "id": 3,
-//         "name": "Andy Murray",
-//         "dob": "21-08-88",
-//         "slams": 3
-//       }, {
-//         "id": 4,
-//         "name": "Novak Djokovic",
-//         "dob": "21-08-88",
-//         "slams": 17
-//       }
-//     ];
+const modalButton = document.getElementById("modal-btn");
+const modalElement = document.getElementsByClassName("modal");
+const modalContent1 = document.getElementsByClassName("modal-content");
 
-//     const createPlayerCard = (player) => {
-//         const nameTag = document.createElement("h2");
-//         const dobTag = document.createElement("p");
-//         const slamTag = document.createElement("p");
-//         const playerCard = document.createElement("div");
+function openPlayerModal() {
+    modalElement.style.display = "grid";
+}
 
-//         nameTag.innerHTML = player.name;
-//         dobTag.innerHTML = player.dob;
-//         slamTag.innerHTML = player.slams;
-
-//         playerCard.classList.add("player");
-
-//         playerCard.appendChild(nameTag);
-//         playerCard.appendChild(dobTag);
-//         playerCard.appendChild(slamTag);
-
-//         return playerCard;
-//       };
-
-//       const init = () => {
-//         const wrapper = document.getElementById("playerList1");
-
-//         for (let player of players) {
-//           const playerCard = createPlayerCard(player);
-//           wrapper.appendChild(playerCard);
-//     }
-//   };
-
-//   init();
-// };
+modalButton.addEventListener("click", openPlayerModal, false);
 
 //  MODAL EXAMPLE I DID WITH BUTTONS ONLY FED AND DJOK
 // let modalBtn = document.getElementById("modal-btn")
@@ -513,11 +440,11 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 // }
 
 // New try at modal
-// var modal = document.getElementsByClassName("playerModal");
+// var modal = document.getElementById("modal-btn");
 
 // var closeModal = document.getElementsByClassName("close-btn")[0];
 
-// var modalContent = document.getElementsByClassName("modalContent");
+// var modalContent = document.getElementsByClassName("modal");
 
 // function playerModal() {
 //   modalContent.style.display = "block";
@@ -535,3 +462,60 @@ searchbar.addEventListener("keyup", searchPlayer, false);
 //     modalContent.style.display = "none";
 //   }
 // }
+
+//Tried to copy Ally's modal here
+
+// window.onload = () => {
+//     const players1 = [{
+//         "id": 1,
+//         "name": "Roger Federer",
+//         "dob": "21-08-88",
+//         "slams": 20
+//       }, {
+//         "id": 2,
+//         "name": "Rafael Nadal",
+//         "dob": "21-08-88",
+//         "slams": 20
+//       }, {
+//         "id": 3,
+//         "name": "Andy Murray",
+//         "dob": "21-08-88",
+//         "slams": 3
+//       }, {
+//         "id": 4,
+//         "name": "Novak Djokovic",
+//         "dob": "21-08-88",
+//         "slams": 17
+//       }
+//     ];
+
+//     const createPlayerCard = (player) => {
+//         const nameTag = document.createElement("h2");
+//         const dobTag = document.createElement("p");
+//         const slamTag = document.createElement("p");
+//         const playerCard = document.createElement("div");
+
+//         nameTag.innerHTML = player.name;
+//         dobTag.innerHTML = player.dob;
+//         slamTag.innerHTML = player.slams;
+
+//         playerCard.classList.add("player");
+
+//         playerCard.appendChild(nameTag);
+//         playerCard.appendChild(dobTag);
+//         playerCard.appendChild(slamTag);
+
+//         return playerCard;
+//       };
+
+//       const init = () => {
+//         const wrapper = document.getElementById("playerList1");
+
+//         for (let player of players) {
+//           const playerCard = createPlayerCard(player);
+//           wrapper.appendChild(playerCard);
+//     }
+//   };
+
+//   init();
+// };
