@@ -19,20 +19,46 @@ function myFunction() {
   let todayDate = document.querySelector('time');
   todayDate.textContent = todayShow;
 
-let modalBtn = document.getElementById("modal-btn")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-}
-closeBtn.onclick = function(){
-  modal.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
+//HERE IS THE OLD WORKING MODAL FOR FED
+
+// let modalBtn = document.getElementById("modal-btn")
+// let modal = document.querySelector(".modal")
+// let closeBtn = document.querySelector(".close-btn")
+// modalBtn.onclick = function(){
+//   modal.style.display = "block"
+// }
+// closeBtn.onclick = function(){
+//   modal.style.display = "none"
+// }
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.style.display = "none"
+//   }
+// }
+
+//UNBLOCK ALL ABOVE TO GET OLD WORKING MODAL FOR FED
+
+let modalBtns = document.querySelectorAll(".modal-open");
+
+modalBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    let modal = btn.getAttribute("data-modal");
+  document.getElementById(modal).style.display = "block";
+  };
+});
+
+let closeBtns = document.querySelectorAll(".close-btn");
+closeBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    let modal = (btn.closest(".modal").style.display = "none");
+  };
+});
+
+window.onclick = function(e) {
+  if (e.target.className === "modal") {
+    e.target.style.display = "none";
   }
-}
+};
 
 // let modalBtn = document.getElementsByTagName("button[i]");
 // let modal = document.querySelectorAll(".modal");
