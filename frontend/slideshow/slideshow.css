@@ -2,6 +2,57 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+header {
+    display: inline-flex;
+    background-color: blueviolet;
+    width: 100%;
+    max-height: fit-content;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.atplogo {
+    min-width: 120px;
+    min-height: 80px;
+    max-width: 120px;
+    max-height: 80px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+.wtalogo {
+    min-width: 80px;
+    min-height: 50px;
+    max-width: 80px;
+    max-height: 50px;
+    position: absolute;
+    right: 100px;
+    top: 5px;
+}
+
+nav {
+    display: inline-flexbox;
+    justify-content: center;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
