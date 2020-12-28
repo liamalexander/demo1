@@ -177,19 +177,6 @@ h1 {
     background-color: hotpink;
 }
 
-@media only screen and (max-width:800px) {
-    .box {
-        width: 50%;
-        padding: 5px;
-    }
-    }
-    @media only screen and (max-width:500px) {
-    .box {
-        width: 100%;
-        padding: 5px;
-    }
-    }
-
 .footer {
     width: 100%;
     background-color:#777777;
@@ -250,6 +237,12 @@ h1 {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 5px;
+    float: right; 
+    height: 200px; 
+    width: 250px; 
+    position: absolute; 
+    top: 15px; 
+    right: 50px;
 }
 
 .modal-content table {
@@ -314,4 +307,59 @@ h1 {
 }
 .uso {
     background-color: mediumslateblue;
+}
+
+@media only screen and (max-width:1200px) {
+    .box {
+        width: 50%;
+        padding: 5px;
+    }
+    .modal-body img {
+        position: static;
+        display: block;
+        margin: 10px;
+    }
+    .modal-body p {
+        margin-top: 10px;
+    }
+    .modal-body table {
+        padding-top: 0%;
+    }
+}
+@media only screen and (max-width:770px) {
+    .box {
+        width: 100%;
+        padding: 5px;
+    }
+    .modal-body img {
+        position: static;
+        display: block;
+        margin: 10px;
+        width: 100%;
+    }
+    .modal-body p {
+        margin-top: 10px;
+    }
+    .modal-body table {
+        padding-top: 0%;
+    }
+}
+
+}
+@media only screen and (max-width:500px) {
+    .box {
+        width: 100%;
+        padding: 5px;
+    }
+    .modal-body img {
+        position: static;
+        display: block;
+        margin: 10px;
+    }
+    .modal-body p {
+        margin-top: 10px;
+    }
+    .modal-body table {
+        padding-top: 0%;
+    }
 }
