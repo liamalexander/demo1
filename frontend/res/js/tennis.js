@@ -1,6 +1,14 @@
 //Change into 1 function for both incorrect, add class to each instead of id and put all the changes into css
 // with addClass / attribute to make the code shorter
 // add each 3 answers in each q to an array to make it only 1 function?
+const accordion = document.getElementsByClassName("contentBox");
+
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function() {
+        this.classList.toggle("active")
+    })
+}
+
 function changeColour() {
     const wrongA = document.getElementById("ans1a");
     wrongA.style.backgroundColor = "red";
@@ -390,3 +398,21 @@ window.onclick = function(e) {
         e.target.style.display = "none";
     }
 };
+
+// const collaps = document.querySelectorAll(".rival");
+
+// function openRival() {
+//     let rival = document.getElementsByClassName("hidden-rival");
+//     rival.style.display = "contents";
+// }
+
+// collaps.addEventListener("click", openRival, false);
+
+
+// const accordion = document.getElementsByClassName("contentBox");
+
+// for (i = 0; i < accordion.length; i++) {
+//     accordion[i].addEventListener("click", function() {
+//         this.classList.toggle("active")
+//     })
+// }

@@ -311,7 +311,7 @@ h1 {
     background-color: mediumslateblue;
 }
 
-#rival-list {
+/* #rival-list {
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -355,8 +355,8 @@ h1 {
 
 .hidden-rival {
     /* display: none; */
-    display: contents;
-    grid-template-columns: 2fr 2fr 2fr;
+    /* display: contents; */ 
+    /* grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas:
         'left middle right';
     text-align: center;
@@ -382,6 +382,88 @@ h1 {
 
 .rival p {
     line-height: 2.8;
+} */
+
+                            /* to try new accordion, delete later */
+
+.accordion {
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+.accordion .contentBox {
+
+}
+.accordion .contentBox .label {
+    position: relative;
+    padding: 10px;
+    background: #2694af;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    width: -webkit-fill-available;
+    margin-top: 50px;
+}
+.accordion .contentBox .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 1.5em;
+    transform: translateY(-50%);
+}
+.accordion .contentBox .content {
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    display: inline-flex;
+    width: -webkit-fill-available;
+}
+.accordion .contentBox.active .label::before {
+    content: '-';
+}
+.accordion .contentBox.active .content {
+    height: 180px;
+    padding: 10px;
+}
+
+.label > h2 {
+    grid-column: 2/4;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 37%;
+}
+
+.label > img {
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 170px;
+    min-width: 170px;
+    grid-column: 1/2;
+}
+
+.label .pic2 {
+    justify-self: end;
+    grid-column: 4/5;
+    position: absolute;
+    right: 10px;
+}
+
+.content {
+    grid-row: 2;
+    line-height: 1.5;
+}
+
+.middle {
+    margin: auto;
+    font-weight: 600;
+}
+.left, .right {
+    margin: auto;
 }
 
 @media only screen and (max-width:1200px) {
