@@ -398,21 +398,3 @@ window.onclick = function(e) {
         e.target.style.display = "none";
     }
 };
-
-// const collaps = document.querySelectorAll(".rival");
-
-// function openRival() {
-//     let rival = document.getElementsByClassName("hidden-rival");
-//     rival.style.display = "contents";
-// }
-
-// collaps.addEventListener("click", openRival, false);
-
-
-// const accordion = document.getElementsByClassName("contentBox");
-
-// for (i = 0; i < accordion.length; i++) {
-//     accordion[i].addEventListener("click", function() {
-//         this.classList.toggle("active")
-//     })
-// }
