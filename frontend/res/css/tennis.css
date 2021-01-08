@@ -389,6 +389,104 @@ h1 {
     margin: auto;
 }
 
+/*  TRY TO DO TABS HERE*/
+
+/* .tabs {
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    height: 100%;
+}
+
+.tabLink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tabLink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#AusOpen {background-color: lightseagreen;}
+#FreOpen {background-color:tomato;}
+#Wimbo {background-color: mediumseagreen;}
+#UsOpen {background-color: mediumslateblue;} */
+
+.tabContainer {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.tabContainer .buttonContainer {
+    height: 15%;
+}
+.tabContainer .buttonContainer button {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #eee;
+    margin-top: 75px;
+}
+.tabContainer .buttonContainer button:hover {
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel {
+    height: 85%;
+    background-color: 'gray';
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: none;
+}
+.tabPanel img {
+    height: 100%;
+    width:100%;
+}
+.tabContainer .tabContent {
+    position: absolute;
+    bottom: 13%;
+    background: rgba(3, 190, 252, 0.5);
+    width: 80%;
+}
+.tabContent h2 {
+    font-size: 20px;
+}
+.tabContent p {
+    font-size: 18px;
+}
+#frenchTab {
+    background: rgba(252, 74, 3, 0.5);
+}
+#wimbTab {
+    background: rgba(89, 163, 24, 0.5);
+}
+#usTab {
+    background: rgba(99, 63, 232, 0.5);
+}
+
 @media only screen and (max-width:1200px) {
     .box {
         width: 50%;
