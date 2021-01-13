@@ -24,8 +24,9 @@ function showPanel(panelIndex, colorCode) {
     });
     tabPanels[panelIndex].style.display = "block";
     tabPanels[panelIndex].style.backgroundColor = colorCode;
-}
+
 showPanel(0, '#03befc');
+};
 
 function changeColour() {
     const wrongA = document.getElementById("ans1a");
