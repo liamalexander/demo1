@@ -648,4 +648,10 @@ h1 {
     header nav a {
         padding: 20px 10px;
     }
+    .tabContainer {
+        width: 90%;
+    }
+    .tabContainer .tabContent {
+        width: 90%;
+    }
 }
