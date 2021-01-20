@@ -1,61 +1,46 @@
-window.onload = () => {
-    const wrestlers = [{
-        "id": 1,
-        "name": "Stone Cold Steve Austin",
-        "titles": 10
-    }, 
+const wrestlerList = document.getElementById("wrestlerList");
+let wrestlers = [
     {
-        "id": 1,
-        "name": "The Rock",
-        "titles": 12
-    }, 
+        "id" : 1,
+        "name" : "Stone Cold Steve Austin",
+        "titles" : 10,
+        "fans" : "face"
+    },
     {
-        "id": 3,
-        "name": "The Undertaker",
-        "titles": 8
-    }, 
+        "id" : 2,
+        "name" : "The Rock",
+        "titles" : 12,
+        "fans" : "face"
+    },
     {
-        "id": 4,
-        "name": "Mankind",
-        "titles": 6
-    }, 
+        "id" : 3,
+        "name" : "The Undertaker",
+        "titles" : 6,
+        "fans" : "heel"
+    },
     {
-        "id": 5,
-        "name": "Kane",
-        "titles": 4
-    }, 
-    {
-        "id": 6,
-        "name": "Vince McMahon",
-        "titles": 1
-    }, 
-    {
-        "id": 7,
-        "name": "HHH",
-        "titles": 16
-    }, 
-    {
-        "id": 8,
-        "name": "Chyna",
-        "titles": 2
+        "id" : 4,
+        "name" : "Kane",
+        "titles" : 1,
+        "fans" : "heel"
     }
-];
-}
+]
 
-const createWrestlerCard = (wrestler) => {
+wrestlers.forEach(wrestler => {
+    const wrestlerCard = document.createElement("div");
+    // wrestlerCard.classList.add("wrestlerCard");
+    wrestlerList.appendChild(wrestlerCard);
+
     const nameTag = document.createElement("h2");
-    const titleWins = document.createElement("p");
-    const wrestlerCard = document.getElementById("wrestlerList");
-
     nameTag.innerHTML = wrestler.name;
-    titleWins.innerHTML = wrestler.titles;
-
+    const titlesWon = document.createElement("p");
+    titlesWon.innerHTML = wrestler.titles + " title wins"
     wrestlerCard.appendChild(nameTag);
-    wrestlerCard.appendChild(titleWins);
+    wrestlerCard.appendChild(titlesWon);
 
-    wrestlerCard.setAttribute("data-id", wrestler.id);
-
-    console.log("wrestlerCard");
-
-    return wrestlerCard;
-};
+    if (wrestler.fans === "face") {
+        wrestlerCard.classList.add("faceCard");
+    } else {
+        wrestlerCard.classList.add("wrestlerCard");
+    }
+});
