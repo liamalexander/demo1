@@ -114,6 +114,8 @@ section div img {
     width: 80%;
     text-align: center;
     display: grid;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr;
     margin-top: 10px;
 }
 
@@ -121,10 +123,43 @@ section div img {
     background: red;
     margin-top: 10px;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'image name name'
+                        'image text text' ;
 }
 
 .faceCard {
     background: green;
     margin-top: 10px;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'image name name'
+                        'image text text' ;
+}
+
+.wrestlerCard > h2 {
+    grid-area: name;
+}
+.faceCard > h2 {
+    grid-area: name;
+}
+.wrestlerCard > img {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.faceCard > img {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.wrestlerCard > p {
+    grid-area: text;
+}
+.faceCard > p {
+    grid-area: text;
 }
