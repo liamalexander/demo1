@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Demo1</title>
+  <meta name="description" content="Tennis' Grand Slam Champions">
+
+  <link rel="stylesheet" href="/frontend/res/css/normalise.css">
+  <link rel="stylesheet" href="/frontend/new-tennis/tennis.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="/frontend/new-tennis/tennis.html">Home</a>
+                <a href="/frontend/new-tennis/tennis-quiz.html">Quiz</a>
+                <a href="/frontend/new-tennis/tennis-videos.html">Videos</a>
+                <a href="/frontend/new-tennis/tennis-rivalries.html">Rivalries</a>
+                <a href="/frontend/new-tennis/tennis-records.html">Records</a>
+            </nav>
+        </div>
+    </header>
+    <div id="quizQuestions" class="container">
+        <h1>Tennis Grand Slam Quiz</h1>
+            <h3>1. How many Wimbledon singles titles has Roger Federer won?</h3>
+                <button type="button" id="ans1a" onclick="changeColour()">a) Six</button>
+                <button type="button" id="ans1b" onclick="changeColour1()">b) Seven</button>
+                <button type="button" id="correctAns1" onclick="changeCorrect()">c) Eight</button>
+                <p id="answer"></p>
+                <br>
+            <h3>2. How many times has Rafael Nadal lost at the French Open?</h3>
+                <button type="button" id="ans2a" onclick="changeColour2()">a) 1</button>
+                <button type="button" id="correctAns2" onclick="changeCorrect2()">b) 2</button>
+                <button type="button" id="ans2c" onclick="changeColour2c()">c) 3</button>
+                <p id="answer2"></p>
+                <br>
+            <h3>3. At which tournament did Martina Navratilova win 9 of her 18 Grand Slam singles titles?</h3>
+                <button type="button" id="ans3a" onclick="changeColour3()">a) US Open</button>
+                <button type="button" id="correctAns3" onclick="changeCorrect3()">b) Wimbledon</button>
+                <button type="button" id="ans3c" onclick="changeColour3c()">c) Australian Open</button>
+                <p id="answer3"></p>
+                <br>
+            <h3>4. Chris Evert won a women's record singles titles at the French Open.  How many times did she win it?</h3>
+                <button type="button" id="correctAns4" onclick="changeCorrect4()">a) Seven</button>
+                <button type="button" id="ans4b" onclick="changeColour4()">b) Eight</button>
+                <button type="button" id="ans4c" onclick="changeColour4c()">c) Nine</button>
+                <p id="answer4"></p>
+                <br>
+            <h3>5. Who is the only player to ever win all 4 Grand Slams and the Olympic Gold Medal in one season?</h3>
+                <button type="button" id="ans5a" onclick="changeColour5()">a) Roger Federer</button>
+                <button type="button" id="ans5b" onclick="changeColour5b()">b) Rafael Nadal</button>
+                <button type="button" id="correctAns5" onclick="changeCorrect5()">c) Steffi Graf</button>
+                <p id="answer5"></p>
+                <br>
+            <h3>6. In which year was the Calender Year Golden Slam achieved?</h3>
+                <button type="button" id="correctAns6" onclick="changeCorrect6()">a) 1988</button>
+                <button type="button" id="ans6b" onclick="changeColour6()">b) 1992</button>
+                <button type="button" id="ans6c" onclick="changeColour6c()">c) 1996</button>
+                <p id="answer6"></p>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/bbcnews/" target="_blank" class="social-icon">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/bbcnews?lang=en" target="_blank" class="social-icon">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <p>Copyright Liam's Tennis Database 2020</p>
+      </div>
+      
+    <script src="/frontend/new-tennis/tennis.js"></script>
+
+    
+</body>
+</html>
