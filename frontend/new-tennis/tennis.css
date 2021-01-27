@@ -114,3 +114,18 @@ h1 {
     margin-top: 5px;
     margin-left: 5px;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: azure;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+}
+
+.social-icon {
+    padding: 0 20px;
+    color: dodgerblue;
+}
