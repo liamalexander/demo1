@@ -416,4 +416,4 @@ let tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
     tabPanels[panelIndex].style.backgroundColor = colorCode;
 };
 // body.onload = "showPanel(0, '#03befc')";
-showPanel(0, '#03befc');
+window.onload = showPanel(0, '#03befc');
