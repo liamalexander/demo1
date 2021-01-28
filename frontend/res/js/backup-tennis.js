@@ -417,3 +417,37 @@ let tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 };
 // body.onload = "showPanel(0, '#03befc')";
 window.onload = showPanel(0, '#03befc');
+
+
+    // NEW 
+    // playerWrapper.classList.add(".modal-open");
+
+    // playerWrapper.addEventListener("click", function() {
+    //   // alert("modal working");
+    //   function createModal(modal) {
+    //     const modalWrapper = document.createElement("div");
+    //     modalWrapper.classList.add("modal-wrapper");
+
+    //     const modalHead = document.createElement("h3");
+    //     modalHead.innerHTML = player.name;
+
+    //     const closeBtns = document.createElement("span");
+    //     closeBtns.innerHTML = "x";
+    //     closeBtns.classList.add(".close-btns");
+
+    //     const playerStats = document.createElement("p");
+    //     playerStats.innerHTML = "Born: " + player.dob + "<br>" + "nationality: " + player.nationality + "<br>" + "First Slam: " + player.firstSlam + "<br>" + "Last Slam: " + player.lastSlam + "<br>" + "Total Slams: " + player.slams + "<br>" + "Total Titles: " + player.titles;
+    //     playerStats.classList.add(".modal-stats");
+
+    //     const playerText = document.createElement("p");
+    //     playerText.innerHTML = player.text;
+    //     playerText.classList.add(".modal-text");
+
+    //     const modalTable = document.createElement("table");
+    //     modalTable.innerHTML = "";
+    //     modalTable.classList.add(".modal-table");
+
+    //     const modalImage = document.createElement("img");
+    //     modalImage.src = player.modalPhoto;
+    //     modalImage.classList.add(".modal-img");
+    // })
