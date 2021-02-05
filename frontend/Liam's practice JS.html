@@ -8,166 +8,18 @@
   <meta name="description" content="Liam JS practice">
 
   <link rel="stylesheet" href="res/css/normalise.css">
-  <link rel="stylesheet" href="res/css/tennis.css">
+  <link rel="stylesheet" href="/frontend/res/css/practice.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- <h1>Liam's practice</h1> -->
-    <!-- <button name="addButton" type="button" id="addButton">Add Numbers</button>
 
-    <div id="counter">0</div>
+</div>
+<ul id="playerList">
+</ul>
+</div>
+<div class="player-modal"></div>
 
-    <ul class="people"></ul>
-
-    <p>this is a success</p>
-    <p>this is an error</p>
-    <p>this is an error</p>
-    <p>this is neither</p>
-    <p>this is an error</p>
-    <p>this is a success</p>
-    <p>this is an error</p>
-    <p>this is a success</p>
-    <p>this is a success</p>
-
-    <h2>liam@gmail.com</h2>
-    <h2>liamgmail.com</h2> -->
-
-  <header>
-    <div>
-        <nav>
-            <a href="/frontend\Liam's practice JS.html">Home</a>
-            <a href="/tennisQuiz.html">Quiz</a>
-            <a href="/tennisVideo.html">Videos</a>
-            <a href="/frontend/newfile.html">Results</a>
-        </nav>
-    </div>
-  </header>
-  <div class="container">
-    <h1>&#127934 Tennis All Time Greats &#x1F3BE</h1>
-    <div id="searchWrapper">
-      <input 
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Search for a player"/>
-    </div>
-    <ul id="playerList">
-      <li class="player"><h2>Federer</h2>
-      <p>Swiss, 39
-        <br>
-        Grand Slams: 20</p>
-    <img src="https://img.bleacherreport.net/img/images/photos/003/875/482/hi-res-1d5a1ec4eb5852753d70a62c8d584f47_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top"
-    ></li>
-      <li class="player"><h2>Nadal</h2>
-      <p>Spanish, 34
-      <br>
-      Grand Slams: 19</p>
-    <img src="https://sportshub.cbsistatic.com/i/r/2018/06/04/3d569d5c-1f54-498c-ad78-c3085de74dff/thumbnail/1200x675/05771c3e07c9e82b703b23060170ccb3/rafael-nadal.jpg"
-    ></li>
-    <li class="player"><h2>Djokovic</h2>
-    <p>Serbian, 33
-      <br>
-      Grand Slams: 17</p>
-    <img src="https://www.tennisworldusa.org/imgb/95388/-both-rafael-nadal-and-novak-djokovic-are-a-stone-says-spaniard-player.jpg"
-    ></li>
-    <li class="player"><h2>Sampras</h2>
-    <p>American, 49
-      <br>
-      Grand Slams: 14</p>
-    <img src="https://cdn.britannica.com/85/205585-050-94EFDBDB/Pete-Sampras-men-singles-championship-Wimbledon-sets-1998.jpg"
-    ></li>
-    <li class="player"><h2>Borg</h2>
-    <p>Swedish, 65
-      <br>
-      Grand Slams: 11</p>
-    <img src="https://cdn0.scrvt.com/c2465e9022ba946df66d1244a69b1c75/1e95d6daf9a48579/e1556565a2e4/v/4a024e1b7ee3/1980_Wimbledon.jpg"
-    ></li>
-    <li class="player"><h2>Connors</h2>
-    <p>American, 67
-      <br>
-      Grand Slams: 8</p>
-      <img src="https://static01.nyt.com/images/2013/06/02/books/review/02connors/02connors-superJumbo.jpg"
-      ></li>
-    <li class="player"><h2>S Williams</h2>
-    <p>American, 39
-      <br>
-      Grand Slams: 23</p>
-    <img src="https://i.guim.co.uk/img/media/7d6539ca3fb48b9d4854ae1972302328d43c512b/0_149_4455_2673/master/4455.jpg?width=300&quality=85&auto=format&fit=max&s=f3289836d6b4d7c14c14f89335e4460e"
-    ></li>
-    <li class="player"><h2>Graf</h2>
-    <p>German, 49
-      <br>
-      Grand Slams: 22</p>
-    <img src="https://m.hindustantimes.com/rf/image_size_444x250/HT/p2/2020/06/13/Pictures/steffi-graf-of-germany-plays-a-forehand_443cd2b6-ad5c-11ea-99c1-b8a846b2b30c.jpg"
-    ></li>
-    <li class="player"><h2>Evert</h2>
-    <p>American, 60
-      <br>
-      Grand Slams: 18</p>
-    <img src="https://static.ffx.io/images/$width_375%2C$height_211/t_crop_fill/q_86%2Cf_auto/7a9a75e493dc409bd771a18328fc692de7186028"
-    ></li>
-    <li class="player"><h2>Navratilova</h2>
-    <p>Czech, 59
-      <br>
-      Grand Slams: 18</p>
-    <img src="https://www.tennisworldusa.org/imgb/52642/martina-navratilova-i-am-who-i-am.jpg"
-    ></li>
-    <li class="player"><h2>Court</h2>
-    <p>Australian, 72
-      <br>
-      Grand Slams: 11</p>
-      <img src="https://images.startsat60.com/wp-content/uploads/20191107094136/margaret-court-getty.jpg"
-      ></li>
-      <li class="player"><h2>Seles</h2>
-      <p>Yugoslavian / American, 47
-        <br>
-        Grand Slams: 9</p>
-        <img src="https://photoresources.wtatennis.com/photo-resources/2020/03/23/a5220971-730c-44d0-9b16-f3af05c11319/GettyImages-640465599.jpg?width=1176&height=662"
-        ></li>
-    </ul>
-  </div>
-
-  <!-- CHANGE THIS ONTO A DIFFERENT PAGE AND THE JS AND CSS TO GO WITH IT, THE INDEX PAGE
-    <div id="content">
-  <div id="greeting">Hi there</div>
-  <table>
-    <tr>
-      <td>Sign</td>
-      <td id="sign"></td>
-    </tr>
-    <tr>
-      <td>Tiles</td>
-      <td id="tiles"></td>
-    </tr>
-    <tr>
-      <td>Cost</td>
-      <td id="cost">£</td>
-    </tr>
-    <tr>
-      <td>Shipping</td>
-      <td id="shipping">£</td>
-    </tr>
-    <tr>
-      <td>Total</td>
-      <td id="total">£</td>
-    </tr>
-  </table>
-  </div>
-
-  <div>
-    <h2 id="hotelName"></h2>
-    <p id="roomRate">Room Rate: </p>
-    <p id="specialRate">Special Rate: </p>
-    <p id="offerEnds"></p>
-  </div> -->
-
-  <div class="footer">
-    <a href="https://www.facebook.com/bbcnews/" target="_blank" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/bbcnews?lang=en" target="_blank" class="fa fa-twitter"></a>
-    <p>Copyright Liam's Tennis Database 2020</p>
-  </div>
-
-  <script src="/frontend/res/js/newfile.js"></script>
-
+  <!-- <script src="/frontend/res/js/newfile.js"></script> -->
+<script src="/frontend/res/js/practice.js"></script>
 </body>
 </html>

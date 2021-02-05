@@ -72,7 +72,7 @@ window.onload = function() {
       "name": "Borg",
       "slams": 11,
       "nationality": "Swedish",
-      "photo" : "https://s.err.ee/photo/crop/2018/09/01/541464h879ft4.jpg",
+      "photo" : "https://images.prismic.io/fft-rg-commun-news/d246f93953c7c10fdfe3b5bd195c2eb780b22f0d_1974-1981-annees-bjorn-borg-roland-garros.jpg?auto=compress,format",
       "dob" : "06 / 06 / 56",
       "firstSlam": "French Open 1974",
       "lastSlam": "French Open 1981",
