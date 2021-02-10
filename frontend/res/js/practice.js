@@ -95,6 +95,10 @@ window.onload = function() {
 
         // playerWrapper.addEventListener("click", function() {
         // alert("modal working")})
+
+      playerWrapper.addEventListener("click", () => {
+        alert(player.name + " has won " + player.slams + " Grand Slams.");
+        });
   
       return playerWrapper;
     };
@@ -132,14 +136,14 @@ function displayPlayers() {
   
 // const modalTriggers = document.querySelectorAll(".player-card");
 
-function openModal(e) {
-  const modal = e.target.getAttribute("id");
-  players.forEach(player => {
-    if (modal === player.id) {
-      console.log(player.name);
-    }
-  });
-}
+// function openModal(e) {
+//   const modal = e.target.getAttribute("id");
+//   players.forEach(player => {
+//     if (modal === player.id) {
+//       console.log(player.name);
+//     }
+//   });
+// }
 
     function addHandlers() {
       const searchInput = document.getElementById("searchBar");
@@ -171,8 +175,11 @@ function openModal(e) {
 const modalTriggers = document.getElementById("playerList");
 modalTriggers.addEventListener("click", (e) => {
     // console.log(e.target.getAttribute("id"));
-    if (e.target.getAttribute("id") === players.player.id) {
-      console.log(player.name);
+    alert(this.player.name);
+    // function createModal(e) {
+    //   const modal = document.createElement("div");
+    //   modal.innerHTML = e.target.getAttribute("name");
     }
-});
+    
+);
 // console.log(modalTriggers);
