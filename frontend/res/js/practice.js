@@ -97,9 +97,19 @@ window.onload = function() {
         // alert("modal working")})
 
       playerWrapper.addEventListener("click", () => {
+        // function playerModals(player) {
+        // const playerModal = document.createElement("div");
+        // playerModal.classList.add(".player-modal");
+        // playerModal.innerHTML = player.name;
+        // const modalHeader = document.createElement("h2");
+        // modalHeader.innerHTML = player.name;
+        // playerModal.appendChild(modalHeader);
+
+        // return playerModals;
+      // };
         alert(player.name + " has won " + player.slams + " Grand Slams.");
         });
-  
+      // playerWrapper.addEventListener("click", playerModals, false);
       return playerWrapper;
     };
 
@@ -172,14 +182,14 @@ function displayPlayers() {
 
 // modalTriggers.addEventListener("click", openModal(), false);
 
-const modalTriggers = document.getElementById("playerList");
-modalTriggers.addEventListener("click", (e) => {
+// const modalTriggers = document.getElementById("playerList");
+// modalTriggers.addEventListener("click", (e) => {
     // console.log(e.target.getAttribute("id"));
-    alert(this.player.name);
+    // alert(this.player.name);
     // function createModal(e) {
     //   const modal = document.createElement("div");
     //   modal.innerHTML = e.target.getAttribute("name");
-    }
+    // }
     
-);
+// );
 // console.log(modalTriggers);
